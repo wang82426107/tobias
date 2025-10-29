@@ -56,11 +56,11 @@ android {
         implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.2'
         implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2'
         // 强制插件自身使用高版本元数据库
-        implementation "org.jetbrains.kotlinx:kotlinx-metadata-jvm:0.7.1"
+        implementation "org.jetbrains.kotlinx:kotlinx-metadata-jvm:0.8.0"
         // 排除其他依赖带来的旧版本
         configurations.all {
             resolutionStrategy {
-                force "org.jetbrains.kotlinx:kotlinx-metadata-jvm:0.7.1"
+                force "org.jetbrains.kotlinx:kotlinx-metadata-jvm:0.8.0"
             }
         }
         testImplementation 'org.jetbrains.kotlin:kotlin-test'
